@@ -6,6 +6,13 @@ class Splashscreen extends StatefulWidget{
 
   @override
   State<Splashscreen> createState() => _MyWidegetState();
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(seconds: 4))
+    .then((_) => {Navigator.popAndPushNamed(context, '/hawaccess')}
+    
+  }
 }
 
 class _MyWidegetState extends State<Splashscreen> {
